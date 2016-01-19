@@ -8,15 +8,11 @@ bl_info = {
 
 import bpy
 
-from .addons import boolean_2d_union
-from boolean_2d_union import Boolean2DUnion
+from .included_addons import boolean_2d_union
+
 
 def register():
     bpy.utils.register_module(__name__)
 
 def unregister():
     bpy.utils.unregister_module(__name__)
-
-
-if __name__ == "__main__":
-    register()
